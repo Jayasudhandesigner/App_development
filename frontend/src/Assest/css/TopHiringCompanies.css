@@ -1,0 +1,46 @@
+
+.top-hiring-companies {
+  text-align: center;
+  padding: 10px;
+}
+
+.top-hiring-companies h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.top-hiring-companies .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Small space between the logos */
+  padding: 0 20px; /* Adds space on the left and right sides */
+}
+
+.top-hiring-companies .logos img {
+  width: calc(16.66% - 20px); /* Ensures all images are of equal width and there is space between them */
+  max-width: 100px; /* Optional: limit the maximum width */
+  height: 90px; /* Set a fixed height for uniformity */
+  object-fit: contain; /* Ensures the aspect ratio is maintained */
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+}
+
+.top-hiring-companies .logos img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.top-hiring-companies .view-all {
+  display: block;
+  margin-top: 20px;
+  color: #6366f1; /* Purple color */
+  text-decoration: none;
+}
+
+.top-hiring-companies .view-all:hover {
+  color: #4f46e5; /* Darker purple on hover */
+}

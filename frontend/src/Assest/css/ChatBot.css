@@ -1,0 +1,125 @@
+/* ChatBot.css */
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 250px; /* Default width for larger screens */
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  border-radius: 12px;
+  background: #fff; /* Light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Default height */
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.chatbot-header {
+  background-color: #0073b1; /* LinkedIn color */
+  color: #fff;
+  padding: 10px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatbot-title {
+  font-size: 14px; /* Adjust font size */
+  text-align: center;
+}
+
+.chatbot-content {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chatbot-messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatbot-message {
+  border-radius: 8px; /* Rounded corners */
+  padding: 8px; /* Adjust padding */
+  margin-bottom: 10px;
+  font-size: 14px; /* Default text size */
+}
+
+.user-message {
+  background-color: #0073b1; /* LinkedIn color */
+  color: #fff;
+  align-self: flex-end; /* Align to the right */
+}
+
+.bot-message {
+  background-color: #e1e1e1; /* Light grey background for bot messages */
+  color: #333;
+  align-self: flex-start; /* Align to the left */
+}
+
+.chatbot-footer {
+  background-color: #f1f1f1; /* Match content background */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.chatbot-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.chatbot-button {
+  background-color: #0073b1; /* LinkedIn color */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px; /* Adjust padding */
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background-color: #005c87; /* Darker shade for hover */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .chatbot-container {
+    width: 200px; /* Smaller width for tablets and smaller screens */
+    height: 250px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-container {
+    width: 180px; /* Even smaller width for mobile screens */
+    height: 200px; /* Adjust height for mobile screens */
+  }
+
+  .chatbot-header {
+    font-size: 12px; /* Smaller font size for header */
+  }
+
+  .chatbot-content {
+    font-size: 12px; /* Smaller font size for content */
+  }
+
+  .chatbot-button {
+    padding: 6px 12px; /* Smaller padding for button */
+    font-size: 10px; /* Smaller font size for button */
+  }
+}

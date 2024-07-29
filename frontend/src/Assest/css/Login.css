@@ -1,0 +1,100 @@
+/* Login.css */
+.login-form-container {
+  background-color: #252525; /* Dark background */
+  padding: 30px;
+  border-radius: 10px; /* Sharper edges */
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.5), 
+              0 0 25px rgba(255, 54, 255, 0.5), 
+              0 0 35px rgba(250, 113, 250, 0.5); /* Rainbow neon shadows */
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh; /* Center vertically */
+  color: white; /* White text */
+}
+
+.login-form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #d3d3d3;
+}
+
+.login-form-container .user-icon {
+  font-size: 50px;
+  color: #6515e6; /* Purple color */
+  margin-bottom: 20px;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-form-container input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #414141;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #1a1a1a; /* Dark background for input */
+  color: white; /* White text */
+  transition: border-color 0.3s;
+}
+
+.login-form-container input:focus {
+  border-color: #8bdff6;
+  outline: none;
+}
+
+.login-form-container button {
+  padding: 12px;
+  background-color: #1a1d21;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.login-form-container button:hover {
+  background-color: #9500b3;
+}
+
+/* Modal */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1f1f1f; /* Dark background for modal */
+  padding: 20px;
+  border-radius: 10px; /* Sharper edges */
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.5), 
+              0 0 15px rgba(0, 255, 255, 0.5), 
+              0 0 15px rgba(0, 255, 0, 0.5), 
+              0 0 15px rgba(255, 255, 0, 0.5); /* Rainbow neon shadows */
+  color: white; /* White text */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.logo {
+  display: block;
+  margin: 0 auto 0px; /* Center the logo and add some margin at the bottom */
+  max-width: 100px; /* Adjust the size of the logo */
+}

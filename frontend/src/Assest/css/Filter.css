@@ -1,0 +1,114 @@
+/* RemoteJobs.css */
+
+.remote-jobs {
+  text-align: center;
+  padding: 20px;
+}
+
+.remote-jobs h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white; /* White text */
+}
+
+.job-cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for card movement */
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: #4338ca; /* Darker purple color */
+}
+
+.nav-button:hover {
+  color: #3730a3; /* Even darker purple on hover */
+}
+
+/* JobCard.css */
+
+.job-card {
+  width: 350px; /* Increased width */
+  background-color: rgb(46, 46, 46);
+  border: 1px solid #1f2937; /* Dark border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+  color: white; /* White text */
+}
+
+.job-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  color: white; /* White text */
+}
+
+.job-badge {
+  background-color: #b91c1c; /* Dark red color */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.job-days-ago {
+  font-size: 12px;
+  color: #4b5563; /* Dark gray color */
+}
+
+.job-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: white; /* White text */
+}
+
+.job-company {
+  font-size: 14px;
+  color: white; /* White text */
+}
+
+.job-location,
+.job-experience,
+.job-positions,
+.job-early-applicant {
+  font-size: 14px;
+  margin: 5px 0;
+  color: white; /* White text */
+}
+
+.job-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white; /* White text */
+}
+
+.not-interested-button,
+.apply-button {
+  background: none;
+  border: none;
+  color: #4338ca; /* Darker purple color */
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.not-interested-button:hover,
+.apply-button:hover {
+  color: #3730a3; /* Even darker purple on hover */
+}

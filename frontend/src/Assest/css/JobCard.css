@@ -1,0 +1,109 @@
+/* JobCard.css */
+
+.job-card {
+  width: 300px; /* Adjusted width */
+  background-color: #1f1f1f; /* Dark background */
+  border: 1px solid #3e3e3e; /* Dark border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s, height 0.3s, opacity 0.3s; /* Smooth transition */
+  color: white; /* White text */
+}
+
+.job-card.not-interested {
+  height: 100px; /* Smaller height */
+  opacity: 0.5; /* Lower opacity */
+  overflow: hidden; /* Hide overflow */
+}
+
+.job-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  color: white; /* White text */
+}
+
+.job-badge {
+  background-color: #8d0dad; /* Dark red color */
+  color: white; /* White text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.job-days-ago {
+  font-size: 12px;
+  color: #9ca3af; /* Gray color */
+}
+
+.job-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #e4e4e4; /* Light gray color */
+}
+
+.job-company {
+  font-size: 14px;
+  color: #d4d4d4; /* Light gray color */
+}
+
+.job-location,
+.job-experience,
+.job-positions,
+.job-early-applicant {
+  font-size: 14px;
+  margin: 5px 0;
+  color: white; /* White text */
+}
+
+.job-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white; /* White text */
+}
+
+.apply-button {
+  background-color: #6e059e; /* Purple background */
+  color: white; /* White text */
+  border: 1px solid #6e059e; /* Matching border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for button size */
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+.not-interested-button{
+  background-color: #c40c62; /* Purple background */
+  color: white; /* White text */
+  border: 1px solid #88144a; /* Matching border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for button size */
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+.apply-button:hover {
+  background-color: #420b58; /* Darker purple background on hover */
+  border-color: #420b58; /* Matching border color on hover */
+}
+.not-interested-button:hover {
+  background-color: #550d1f; /* Darker purple background on hover */
+  border-color: #49081b; /* Matching border color on hover */
+}
+
+.apply-button:disabled {
+  cursor: not-allowed;
+  background-color: #9ca3af; /* Gray background when disabled */
+  color: #6c757d; /* Gray text when disabled */
+  border-color: #9ca3af; /* Matching border color when disabled */
+}

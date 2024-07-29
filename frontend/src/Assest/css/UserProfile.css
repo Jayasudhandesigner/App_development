@@ -1,0 +1,187 @@
+/* UserProfile.css */
+.user-profile {
+    display: flex;
+    padding: 20px;
+    background-color: #121212; /* Dark mode background */
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .profile-sidebar {
+    flex: 0 0 250px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+  }
+  
+  .profile-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-details h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .profile-details p {
+    margin: 5px 0;
+  }
+  
+  .edit-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #550a86;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .edit-button:hover {
+    background-color: #6c0b98;
+  }
+  
+  .profile-content {
+    margin-bottom: 20px;
+  }
+  
+  .profile-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .resume-link {
+    color: #550a86; /* Link color */
+  }
+  
+  .resume-link:hover {
+    text-decoration: underline;
+  }
+  
+  .application-status {
+    margin-top: 20px;
+  }
+  
+  .status-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .status-item {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #1f1f1f; /* Darker background for status items */
+  }
+  
+  .status-item.pending {
+    border-left: 4px solid #ffcc00; /* Yellow for pending */
+  }
+  
+  .status-item.interviewed {
+    border-left: 4px solid #00bfae; /* Teal for interviewed */
+  }
+  
+  .status-item.hired {
+    border-left: 4px solid #00c853; /* Green for hired */
+  }
+  
+  .status-item.rejected {
+    border-left: 4px solid #e57373; /* Red for rejected */
+  }
+  
+  .profile-news {
+    flex: 0 0 250px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+  }
+  
+  .news-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .news-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .news-section li {
+    margin-bottom: 10px;
+  }
+  
+  .news-section a {
+    color: #550a86; /* Link color */
+    text-decoration: none;
+  }
+  
+  .news-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .sidebar-section {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .sidebar-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-section li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .sidebar-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-name {
+    font-weight: bold;
+  }
+  
+  .sidebar-username {
+    color: #b0b0b0;
+  }
+  

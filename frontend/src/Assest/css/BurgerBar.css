@@ -1,0 +1,42 @@
+/* src/Assest/css/BurgerBar.css */
+.burger-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .burger-bar.open {
+    transform: translateX(0);
+  }
+  
+  .burger-menu {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .burger-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .burger-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px 0;
+  }
+  
+  .burger-nav a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,94 @@
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 100%; /* Match the max-width of the dashboard-container */
+  margin: 0 auto;
+  padding-bottom: 40px; /* Add padding at the bottom */
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-bottom: 10px;
+}
+
+.footer-social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.footer-social a:hover {
+  color: #ff007b;
+}
+
+.footer-info {
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-content {
+    padding-bottom: 30px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-links a {
+    margin: 0 5px; /* Reduce margin for links on smaller screens */
+  }
+
+  .footer-social a {
+    margin: 0 5px; /* Reduce margin for social icons on smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-info {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer-content {
+    padding-bottom: 20px; /* Adjust padding for extra small screens */
+  }
+
+  .footer-links a {
+    margin: 0 2px; /* Reduce margin for links on extra small screens */
+    display: block; /* Display links as block elements for better readability */
+    margin-bottom: 5px; /* Add margin-bottom for spacing between links */
+  }
+
+  .footer-social a {
+    margin: 0 2px; /* Reduce margin for social icons on extra small screens */
+    font-size: 16px; /* Adjust font size for extra small screens */
+  }
+
+  .footer-info {
+    font-size: 10px; /* Adjust font size for extra small screens */
+  }
+}
